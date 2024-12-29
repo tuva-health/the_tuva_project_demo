@@ -1,0 +1,27 @@
+demo_dbt:
+  outputs:
+    dev:
+      account: RMTLSVK-QW00389
+      database: DBT_TUTORIAL
+      password: D@taRock$1111!!
+      role: accountadmin
+      schema: DBT
+      threads: 10
+      type: snowflake
+      user: kserrano
+      warehouse: compute_wh
+  target: dev
+
+tuva_demo:
+  outputs:
+    dev:
+      account: RMTLSVK-QW00389
+      database: ACME_HEALTH
+      password: D@taRock$1111!!
+      role: accountadmin
+      schema: TUVA
+      threads: 10
+      type: snowflake
+      user: kserrano
+      warehouse: compute_wh
+  target: dev
